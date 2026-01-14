@@ -2,6 +2,7 @@ esp32:
   board: $board
   variant: $variant
   flash_size: $flash_size
+  flash_mode: $flash_mode
   framework:
     type: esp-idf
     components:
