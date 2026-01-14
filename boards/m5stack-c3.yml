@@ -1,8 +1,10 @@
 substitutions:
-  board: esp32-s3-devkitc-1
-  #variant: esp32s3
-  flash_size: 8MB
-
+  board: esp32-c3-devkitm-1
+  variant: esp32c3
+  flash_size: 4MB
+  framework:
+    type: esp-idf
+    
 # Board specific entities
 # Output that blinks the LED
 output:
