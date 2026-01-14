@@ -33,7 +33,7 @@ light:
   #G35=RGB WS2812C-2020
   - platform: esp32_rmt_led_strip
     rgb_order: GRB
-    pin: GPIO2
+    pin: GPIO4
     num_leds: 1
     chipset: SK6812
     id: led
