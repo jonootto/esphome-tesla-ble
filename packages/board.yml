@@ -4,11 +4,7 @@ esp32:
   flash_size: $flash_size
   framework:
     type: esp-idf
-    sdkconfig_options:
-      CONFIG_IDF_COMPONENT_MANAGER: "n"
-      CONFIG_APP_BUILD_TYPE_ELF_RAM: "n"
-      CONFIG_APP_COMPILE_TIME_DATE: "n"
     components:
       - name: tesla-ble
-        source: https://github.com/jonootto/tesla-ble.git
+        source: https://github.com/yoziru/tesla-ble.git
         ref: v4.1.3
