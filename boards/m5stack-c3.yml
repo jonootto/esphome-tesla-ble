@@ -30,26 +30,27 @@ light:
     name: "Status Led"
     entity_category: diagnostic
 
-#   #G35=RGB WS2812C-2020
-#   - platform: esp32_rmt_led_strip
-#     rgb_order: GRB
-#     pin: 35
-#     num_leds: 4
-#     chipset: ws2812
-#     id: led
-#     name: "Led"
-#     entity_category: diagnostic
+  #G35=RGB WS2812C-2020
+  - platform: esp32_rmt_led_strip
+    rgb_order: GRB
+    pin: GPIO2
+    num_leds: 1
+    rmt_channel: 0
+    chipset: SK6812
+    id: led
+    name: "Led"
+    entity_category: diagnostic
 
-# #G41=Button
-# binary_sensor:
-#   - platform: gpio
-#     name: Button
-#     entity_category: diagnostic
-#     pin:
-#       number: GPIO41
-#       inverted: true
-#       mode:
-#         input: true
-#         pullup: true
-#     filters:
-#       - delayed_off: 10ms
+#G41=Button
+binary_sensor:
+  - platform: gpio
+    name: Button
+    entity_category: diagnostic
+    pin:
+      number: GPIO3
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    filters:
+      - delayed_off: 10ms
