@@ -40,7 +40,6 @@ light:
     id: led
     name: "Led"
     entity_category: diagnostic
-    restore_mode: ALWAYS_OFF
 
 #G41=Button
 binary_sensor:
